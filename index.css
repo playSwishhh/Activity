@@ -1,0 +1,79 @@
+ body {
+  font-family: Segoe UI, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-card {
+  background-image: url('https://deadline.com/wp-content/uploads/2023/04/harry-potter.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 90%;
+  border: 3px solid gray;
+  border-radius: 50px;
+  padding: 40px 20px;
+  color: white;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
+  box-sizing: border-box;
+}
+
+.section {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin-bottom: 100px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.name {
+  text-align: center;
+  border-style: dotted;
+  border-color: blue;
+}
+
+.info {
+  border-color: brown;
+  text-align: justify;
+  border-style: dashed;
+}
+
+.contact {
+  border-color:green;
+  text-align: center;
+  border-style: solid;
+}
+
+.contact-btn {
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.contact-btn:hover {
+  background-color: black;
+}
+
+@media screen and (max-width: 500px) {
+  .profile-card {
+    padding:  30px 15px;
+  }
+
+  .section {
+    margin-bottom: 40px;
+  }
+
+  .name, .contact{
+    font-size: 16px;
+  }
+
+  .info{
+    font-size: 14px;
+  }
+}
